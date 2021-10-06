@@ -37,3 +37,8 @@
 
 </div>
 ```
+
+```js
+_X.StrPurify(sle_basicmonth.value)
+_X.GetTabIndex(tabs_1) //0부터 시작
+```
