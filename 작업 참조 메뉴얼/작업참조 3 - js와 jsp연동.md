@@ -3,7 +3,8 @@
 
 ### 1. 기본 조회  
 참고: HR03120 (구:CM0204030)    
-![image](https://user-images.githubusercontent.com/61939286/133907479-b202d3aa-1797-4e1d-a72e-f7bfe3a70052.png)  
+![image](https://user-images.githubusercontent.com/61939286/136185784-c8140b7e-d1d5-4eab-8bef-dd2dfb10a792.png)
+
 
 ```js
 //구소스 형태
@@ -37,6 +38,7 @@ fdw_1.Retrieve(mytop.gs_compcode, ddlb_project.value, sle_paymonth.value,'0');
 현장명 값 입력된거 가져와서 넣고, 날짜 입력받은거 넣고, 마지막은 코드 보아하니 탭넘버  
 
 <br>  
+
 
 .js
 ```js
@@ -78,3 +80,27 @@ function xe_TabChanged2(a_tab, a_new_idx, a_old_idx, a_new_tab, a_old_tab){
   return 100;
 }
 ```
+
+<br>  
+
+### 3.  탭 index 추출방법
+```js
+_X.GetTabIndex(tabs_1) //0부터 시작 
+```
+
+```js
+function xe_TabChanged2(a_tab, newIdx, oldIdx, newTab, oldTab){
+
+        switch(newIdx) { //newIdx가 클릭한 탭
+                case 0:        
+                        x_DAO_Retrieve2(dg_1); //dg_1에 해당하는 조회조건 호출
+                        break;
+                case 1:
+                        x_DAO_Retrieve2(dg_2);
+                        break;
+        }
+        
+}
+```
+
+
