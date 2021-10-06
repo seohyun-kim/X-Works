@@ -83,24 +83,6 @@ function xe_TabChanged2(a_tab, a_new_idx, a_old_idx, a_new_tab, a_old_tab){
 
 <br>  
 
-### 3.  탭 index 추출방법
-```js
-_X.GetTabIndex(tabs_1) //0부터 시작 
-```
 
-```js
-function xe_TabChanged2(a_tab, newIdx, oldIdx, newTab, oldTab){
-
-        switch(newIdx) { //newIdx가 클릭한 탭
-                case 0:        
-                        x_DAO_Retrieve2(dg_1); //dg_1에 해당하는 조회조건 호출
-                        break;
-                case 1:
-                        x_DAO_Retrieve2(dg_2);
-                        break;
-        }
-        
-}
-```
 
 
