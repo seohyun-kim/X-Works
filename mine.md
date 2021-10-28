@@ -42,3 +42,15 @@
 _X.StrPurify(sle_basicmonth.value)
 _X.GetTabIndex(tabs_1) //0부터 시작
 ```
+
+### 시간
+```js
+// (YYYY-MM-DD hh:mm:ss)
+var today = new Date(+new Date() + 3240 * 10000).toISOString().replace("T", " ").replace(/\..*/, '');
+
+// (YYYY-MM-DD)
+new Date().toISOString().split("T")[0];
+
+//  (hh:mm:ss)
+new Date().toTimeString().split(" ")[0];
+```
