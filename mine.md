@@ -47,7 +47,8 @@ _X.GetTabIndex(tabs_1) //0부터 시작
 - UTC 로 반영됨 (ISO)
 ```js
 // (YYYY-MM-DD hh:mm:ss)
-var today = new Date(+new Date() + 3240 * 10000).toISOString().replace("T", " ").replace(/\..*/, '');
+var today = new Date().toISOString().replace("T", " ").replace(/\..*/, ''); //UTC
+var today = new Date(+new Date() + 3240 * 10000).toISOString().replace("T", " ").replace(/\..*/, ''); //한국 +9시간
 
 // (YYYY-MM-DD)
 new Date().toISOString().split("T")[0];
@@ -65,4 +66,12 @@ var month = ('0' + (today.getMonth() + 1)).slice(-2);
 var day = ('0' + today.getDate()).slice(-2);
 
 var ls_today = year + month + day;
+```
+
+- 시차 보정
+```js
+// getTimezoneOffset()은 현재 시간과의 차이를 분 단위로 반환한다.
+const offset = new Date().getTimezoneOffset() * 60000;
+
+const today = new Date(Date.now() - offset);
 ```
