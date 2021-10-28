@@ -44,6 +44,7 @@ _X.GetTabIndex(tabs_1) //0부터 시작
 ```
 
 ### 시간
+- UTC 로 반영됨 (ISO)
 ```js
 // (YYYY-MM-DD hh:mm:ss)
 var today = new Date(+new Date() + 3240 * 10000).toISOString().replace("T", " ").replace(/\..*/, '');
@@ -53,4 +54,15 @@ new Date().toISOString().split("T")[0];
 
 //  (hh:mm:ss)
 new Date().toTimeString().split(" ")[0];
+```
+
+- 한국 표준 시로 (YYYYMMDD)
+```js
+var today= new Date();
+
+var year = today.getFullYear();
+var month = ('0' + (today.getMonth() + 1)).slice(-2);
+var day = ('0' + today.getDate()).slice(-2);
+
+var ls_today = year + month + day;
 ```
