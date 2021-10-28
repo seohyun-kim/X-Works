@@ -49,7 +49,7 @@ var is_part = '1'; //진행[01]/완료[02]/반려[03]
 
 //조회버튼 클릭 시 실행되는 함수
 function x_DAO_Retrieve2(a_dg){
-	dg_1.Retrieve([mytop._CompanyCode,S_PROJ_CD.value,sle_basicmonth.value,is_part]);
+	dg_1.Retrieve([mytop._CompanyCode, S_PROJ_CD.value, _X.StrPurify(sle_basicmonth.value), is_part]);
 
 }
 
