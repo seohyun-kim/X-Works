@@ -87,6 +87,7 @@ function xe_TabChanged2(a_tab, a_new_idx, a_old_idx, a_new_tab, a_old_tab){
 
 
 ### 3. 안내 메세지  
+![image](https://user-images.githubusercontent.com/61939286/139404317-e6265de2-39f6-4cc8-a6e8-4545a7a5bcc7.png)  
 
 ![image](https://user-images.githubusercontent.com/61939286/139403947-45a82510-4c50-4ebb-8bd7-0538459d0ce3.png)  
 
