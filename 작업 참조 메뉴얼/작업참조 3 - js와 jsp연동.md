@@ -86,5 +86,21 @@ function xe_TabChanged2(a_tab, a_new_idx, a_old_idx, a_new_tab, a_old_tab){
 <br>  
 
 
+### 3. 안내 메세지  
 
+![image](https://user-images.githubusercontent.com/61939286/139403947-45a82510-4c50-4ebb-8bd7-0538459d0ce3.png)  
+
+.jsp
+```html
+<span class='option_label' id='span_Msg' style="width:300px"></span>
+```  
+
+.js
+```js
+function xe_GridLayoutComplete2(a_dg, ab_allcompleted) {
+        if ( ab_allcompleted ) {
+                span_Msg.innerHTML = "<font color=blue> ※ RTRI, SPIN 은 가장 마지막에 입력하여 주십시요.</font>";
+        }
+}
+```
 
