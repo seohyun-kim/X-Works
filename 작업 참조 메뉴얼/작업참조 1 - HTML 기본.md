@@ -57,19 +57,23 @@ dateType에서 year, month, date 알맞게 쓰면 됨
 
 ![image](https://user-images.githubusercontent.com/61939286/133906247-dc932605-bacc-4d97-89fe-cfdb605723a8.png)  
 
+> 구 소스에서 항목 찾기 어려운 경우 (구 페이지에서 F12)  
+>![image](https://user-images.githubusercontent.com/61939286/139403242-4eab48fc-6cbe-4798-9bf7-4006362d4930.png)
+
 .jsp
 ```jsp
 <div class='option_label'>구분</div>
 <div class='option_input_bg'>
     <select id="DDLB_HALF" class="option_input_fix"  style='width:80px;' >
             <option value = '%'>전체</option>
-            <option value = '1'>신규</option>         
-            <option value = '2'>변경</option>                           
+            <option value = 'Y'>신규</option>         
+            <option value = 'N'>변경</option>                           
     </select>
     <span style="margin-left: 25px;"></span>
 
 </div>
 ```
+
 <br>  
 
 
