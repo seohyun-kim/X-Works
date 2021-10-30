@@ -75,3 +75,25 @@ const offset = new Date().getTimezoneOffset() * 60000;
 
 const today = new Date(Date.now() - offset);
 ```
+
+### 탭에 차일드 버튼  
+![image](https://user-images.githubusercontent.com/61939286/139529492-57e5594b-81ab-4866-8b39-1da900f14642.png)
+
+```html
+<div id="tabs_1" class='tabs_div'>
+        <div id="ctab_nav" class="tabs_nav">
+                <ul>
+                   <li><a href="#ctab_1">관리규칙별 상세현황</a></li>
+                   <li><a href="#ctab_1">소명 사유 입력</a></li>
+                   <li><a href="#ctab_1">소명 사유 입력완료</a></li>
+                </ul>
+        </div>
+        <div id="ctab_1" class='tabc_div'>
+        	<div style='float:right;margin-right:5px;margin-top:-25px;'>
+                <html:authchildbutton id='buttons' grid='dg_2' append='true' insert='false' duplicate='false' delete='true' excel='false' retrieve='false'/>
+            </div>
+
+			<div id='grid_3' class='grid_div mr5'><div id='dg_3' class='slick-grid'></div></div>
+        </div>
+</div>
+```
