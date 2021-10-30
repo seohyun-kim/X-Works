@@ -2,7 +2,12 @@
 
 
 <div id='topsearch' class='option_box2' >
-
+	<div class="option_label w100">현장명</div>
+	<div class="option_input_bg">
+			<select id="S_PROJ_CD" class="option_input_fix"></select>
+			<span style="margin-left: 25px;"></span>
+	</div>
+	
     <div class='option_label'>사원구분</div>
     <div class='option_input_bg'>
             <html:select name="S_EMPLOY_DIV" id = "S_EMPLOY_DIV" comCodeYn="0" codeGroup="hr|hrCOMMON|REF_GBN_CODE_EMPDIV" params="08|%|" dispStyle="1" selected="1"></html:select>
