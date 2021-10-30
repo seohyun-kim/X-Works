@@ -97,3 +97,9 @@ const today = new Date(Date.now() - offset);
         </div>
 </div>
 ```
+
+
+`_X.StrPurify(S_FROM_DATE.value), _X.StrPurify(S_TO_DATE.value)`  
+`x_SetProj_cd(S_PROJ_CD,null,true,null);`
+`_X.Tabs(tabs_1, 0);`
+
