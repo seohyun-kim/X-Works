@@ -105,6 +105,9 @@ dateType에서 year, month, date 알맞게 쓰면 됨
 <input type='radio' name='S_RADIO' class='S_RADIO' value='Y'>년간
 </div>
 ```
+
+> 라디오 버튼 값 가져오기
+`_X.GetRadioValue("S_RADIO")`
 <br>  
 
 ### 7. 화살표 표시  
