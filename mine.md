@@ -35,6 +35,20 @@
     <div class='option_input_bg' style='margin-top:-2px; height:30px;'>
         <div class='option_input_bg'><input id='S_EMPCODE' type='text' class='option_input_fix'></div>  
     </div>
+	
+
+    <div class='option_label'>재직구분</div>
+    <div class='option_input_bg'>
+        <select id="S_RETIREDIV" class="option_input_fix"  style='width:80px;' >
+                <option value = '1'>재직</option>
+                <option value = '2'>퇴직</option>         
+                <option value = '3'>휴직</option>     
+                <option value = '4'>비상근</option>                         
+        </select>
+			</span>
+
+    </div>
+
     
 	<div id='xbtns'>
 		<html:authbutton id='buttons' grid='dg_1'></html:authbutton>
