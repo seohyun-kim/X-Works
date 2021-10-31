@@ -19,7 +19,7 @@
 	</div>
 
 	<div class='option_label'>지급구분</div>
-    <div class='option_input_bg'>
+    	<div class='option_input_bg'>
             <select id="S_PAYKIND" class="option_input_fix"  style='width:80px;' >
                     <option value = '%'>전체</option>
                 <option value = 'B'>상여</option>
@@ -27,8 +27,6 @@
                 <option value = 'P'>급여</option>     
                 <option value = 'S'>성과급</option>                         
             </select>
-            <span style="margin-left: 25px;"></span>
-
     </div>
 
     <div class='option_label'>사번성명</div>
@@ -45,8 +43,6 @@
                 <option value = '3'>휴직</option>     
                 <option value = '4'>비상근</option>                         
         </select>
-			</span>
-
     </div>
 
     
