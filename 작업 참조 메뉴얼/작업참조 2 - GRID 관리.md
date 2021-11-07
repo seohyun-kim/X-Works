@@ -29,3 +29,12 @@ grid관리 -> 타이틀 명 변경
 ```jsp
 <input type='checkbox' id='check_yn_1'/>&nbsp;선택
 ```
+
+백그라운드 컬러  
+![image](https://user-images.githubusercontent.com/61939286/140662927-47806a17-bf76-4ee4-9c6e-21308426b19d.png)
+
+```html
+<div style='text-align:right; background-color: skyblue'>행선</div>|국가
+
+<div style='text-align:left; background-color: skyblue'>지</div>|지역
+```
